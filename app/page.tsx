@@ -1,4 +1,4 @@
-import { BenefitsSection } from "@/components/layout/sections/benefits";
+import { AboutUsSection } from "@/components/layout/sections/about";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
 import { FAQSection } from "@/components/layout/sections/faq";
@@ -44,7 +44,7 @@ export default function Home() {
     <>
       <HeroSection />
       <SponsorsSection />
-      <BenefitsSection />
+      <AboutUsSection />
       <FeaturesSection />
       <ServicesSection />
       <TestimonialSection />

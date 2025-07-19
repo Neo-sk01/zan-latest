@@ -1,43 +1,28 @@
 "use client";
 
-import { Icon } from "@/components/ui/icon";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
-import { icons } from "lucide-react";
-interface sponsorsProps {
-  icon: string;
+import Image from "next/image";
+
+interface Sponsor {
+  src: string;
   name: string;
 }
 
-const sponsors: sponsorsProps[] = [
+const sponsors: Sponsor[] = [
   {
-    icon: "Crown",
-    name: "Acmebrand",
+    src: "/SADA.svg",
+    name: "SADA",
   },
   {
-    icon: "Vegan",
-    name: "Acmelogo",
+    src: "/HPCSA.svg",
+    name: "HPCSA",
   },
   {
-    icon: "Ghost",
-    name: "Acmesponsor",
+    src: "/Ortho SA.svg",
+    name: "Ortho SA",
   },
-  {
-    icon: "Puzzle",
-    name: "Acmeipsum",
-  },
-  {
-    icon: "Squirrel",
-    name: "Acme",
-  },
-  {
-    icon: "Cookie",
-    name: "Accmee",
-  },
-  {
-    icon: "Drama",
-    name: "Acmetech",
-  },
+  // Add more sponsors here
 ];
 
 export const SponsorsSection = () => {
@@ -54,18 +39,18 @@ export const SponsorsSection = () => {
           innerClassName="gap-[3rem]"
           pauseOnHover
         >
-          {sponsors.map(({ icon, name }) => (
+          {sponsors.map((sponsor) => (
             <div
-              key={name}
-              className="flex items-center text-xl md:text-2xl font-medium"
+              key={sponsor.name}
+              className="flex items-center justify-center h-20 w-48"
             >
-              <Icon
-                name={icon as keyof typeof icons}
-                size={32}
-                color="white"
-                className="mr-2"
+              <Image
+                src={sponsor.src}
+                alt={sponsor.name}
+                width={150}
+                height={80}
+                className="object-contain"
               />
-              {name}
             </div>
           ))}
         </Marquee>
