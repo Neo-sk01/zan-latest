@@ -2,25 +2,25 @@ import Image from "next/image";
 
 export const AboutUsSection = () => {
   return (
-    <section id="about-us" className="container py-24 sm:py-32">
+    <section id="about-us" className="bg-[#78b8e5] container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-12">
         <div className="lg:order-2">
           <Image
-            src="/demo-img.jpg"
-            alt="About Us Image"
+            src="/ceramics.svg"
+            alt="Ceramic Braces"
             width={500}
             height={500}
-            className="rounded-lg shadow-lg"
+            className="mix-blend-multiply"
           />
         </div>
         <div className="lg:order-1">
-          <h2 className="text-lg text-primary mb-2 tracking-wider">About Us</h2>
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Smile, Our Passion
+          <p className="text-2xl text-muted-foreground">About</p>
+          <h2 className="text-5xl font-bold mb-4">
+            Dr Zukiswa <br />
+            Tandokazi Nombakuse
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            We are a team of dedicated professionals committed to providing you with the highest quality orthodontic care. Our state-of-the-art facility and personalized treatment plans are designed to help you achieve the beautiful, healthy smile you deserve.
+          <p className="text-lg text-muted-foreground mt-8">
+            Our practice is led by the highly skilled and compassionate Dr. Nombakuse. With extensive qualifications including a BSc, BChD, a Post-Graduate Diploma in Aesthetic Dentistry, and a Master's in Orthodontics from Wits, she brings a wealth of knowledge and expertise to our community. Dr. Nombakuse is committed to using state-of-the-art technology to ensure your treatment is as comfortable and efficient as possible.
           </p>
         </div>
       </div>

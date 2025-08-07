@@ -28,9 +28,7 @@ const sponsors: Sponsor[] = [
 export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
-      </h2>
+
 
       <div className="mx-auto">
         <Marquee
