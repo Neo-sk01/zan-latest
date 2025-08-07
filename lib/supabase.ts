@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
 // Use the specific URL and get the key from environment variables
-const supabaseUrl = 'https://ofmyxoogcgvvbwcjnbij.supabase.co'
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 
 console.log('Supabase URL:', supabaseUrl)

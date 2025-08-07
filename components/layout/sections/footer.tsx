@@ -57,7 +57,7 @@ export default function FooterSection() {
                         <Phone className="h-6 w-6 text-[#1d5aa7]" />
                         <div>
                             <p className="font-semibold text-[#1d5aa7]">Phone</p>
-                            <p className="text-sm text-[#1d5aa7]/80">+27 (0) 11 234 5678</p>
+                            <p className="text-sm text-[#1d5aa7]/80">071 639 0430</p>
                         </div>
                     </div>
                     
@@ -73,7 +73,7 @@ export default function FooterSection() {
                         <MapPin className="h-6 w-6 text-[#1d5aa7]" />
                         <div>
                             <p className="font-semibold text-[#1d5aa7]">Address</p>
-                            <p className="text-sm text-[#1d5aa7]/80">123 Dental Street<br />Johannesburg, 2000</p>
+                            <p className="text-sm text-[#1d5aa7]/80">Wits Oral Health Centre<br />Johannesburg</p>
                         </div>
                     </div>
                     

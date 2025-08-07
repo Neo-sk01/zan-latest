@@ -80,7 +80,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Find us</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+              <div>Wits Oral Health Centre | Johannesburg</div>
             </div>
 
             <div>
@@ -89,7 +89,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Call us</div>
               </div>
 
-              <div>+1 (619) 123-4567</div>
+              <div>071 639 0430</div>
             </div>
 
             <div>
@@ -98,7 +98,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Mail US</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div>info@zanorthodontist.co.za</div>
             </div>
 
             <div>

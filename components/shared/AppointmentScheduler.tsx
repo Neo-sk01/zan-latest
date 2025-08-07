@@ -204,7 +204,7 @@ export const AppointmentScheduler = () => {
                 />
                 <Button
                   type="submit"
-                  className="w-full bg-blue-600"
+                  className="w-full bg-blue-600 text-white"
                   disabled={isLoading}
                 >
                   {isLoading ? 'Processing...' : 'Confirm Appointment'}
