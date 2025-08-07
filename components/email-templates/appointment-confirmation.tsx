@@ -38,7 +38,7 @@ export function AppointmentConfirmationTemplate({
         </p>
         
         <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#374151', marginBottom: '25px' }}>
-          Your appointment has been successfully scheduled. We're excited to help you achieve your perfect smile!
+          Your appointment has been successfully scheduled. We&rsquo;re excited to help you achieve your perfect smile!
         </p>
 
         {/* Appointment Details Box */}

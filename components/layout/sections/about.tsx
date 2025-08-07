@@ -20,7 +20,7 @@ export const AboutUsSection = () => {
             Tandokazi Nombakuse
           </h2>
           <p className="text-lg text-muted-foreground mt-8">
-            Our practice is led by the highly skilled and compassionate Dr. Nombakuse. With extensive qualifications including a BSc, BChD, a Post-Graduate Diploma in Aesthetic Dentistry, and a Master's in Orthodontics from Wits, she brings a wealth of knowledge and expertise to our community. Dr. Nombakuse is committed to using state-of-the-art technology to ensure your treatment is as comfortable and efficient as possible.
+            Our practice is led by the highly skilled and compassionate Dr. Nombakuse. With extensive qualifications including a BSc, BChD, a Post-Graduate Diploma in Aesthetic Dentistry, and a Master&rsquo;s in Orthodontics from Wits, she brings a wealth of knowledge and expertise to our community. Dr. Nombakuse is committed to using state-of-the-art technology to ensure your treatment is as comfortable and efficient as possible.
           </p>
         </div>
       </div>

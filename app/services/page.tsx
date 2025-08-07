@@ -10,6 +10,8 @@ import {
   Zap
 } from "lucide-react";
 
+import Image from "next/image";
+
 import {
   Card,
   CardContent,
@@ -95,7 +97,10 @@ const ServicesPage = () => {
                     </p>
                   </CardContent>
                   <CardFooter className="justify-end pr-0 pb-0">
-                    <img
+                    <Image
+                      width={400}
+                      height={400}
+                      role="presentation"
                       className="h-40 w-full rounded-tl-md object-cover object-center"
                       src={imageSrc}
                       alt={`${service.title} illustration`}

@@ -50,7 +50,7 @@ export const OrthodonticsSection = () => {
               <li>Jaw misalignment</li>
             </ul>
             <p>
-              The goal of orthodontic care is to improve a patient's bite. Teeth that
+              The goal of orthodontic care is to improve a patient&rsquo;s bite. Teeth that
               are straight and evenly spaced will align with opposing teeth in the jaw.
               A healthy bite ensures you can eat, chew, and speak properly. In the
               past, seeing an orthodontist was associated with children or teenagers
