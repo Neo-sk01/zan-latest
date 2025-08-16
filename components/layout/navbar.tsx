@@ -58,14 +58,15 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
-      <div className="container flex h-16 items-center justify-between p-4 mx-auto">
-      <Link href="/" className="font-bold text-lg flex items-center">
+      <div className="container flex h-20 items-center justify-between px-4 py-2 mx-auto">
+      <Link href="/" className="flex items-center">
         <Image
-          src="/logo(zan).svg"
+          src="/resizedDesign.svg"
           alt="Zan Orthodontics Logo"
-          width={150}
-          height={40}
-          className="mr-2"
+          width={160}
+          height={200}
+          className="h-20 w-auto object-contain"
+          priority
         />
       </Link>
       {/* <!-- Mobile --> */}
@@ -87,11 +88,12 @@ export const Navbar = () => {
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
                     <Image
-                      src="/logo(zan).svg"
+                      src="/resizedDesign.svg"
                       alt="Zan Orthodontics Logo"
-                      width={150}
+                      width={140}
                       height={40}
-                      className="mr-2"
+                      className="h-8 w-auto object-contain"
+                      priority
                     />
                   </Link>
                 </SheetTitle>
