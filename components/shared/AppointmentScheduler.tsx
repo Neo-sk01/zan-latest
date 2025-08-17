@@ -110,7 +110,7 @@ export const AppointmentScheduler = () => {
   return (
     <Card className="w-full max-w-6xl mx-auto">
       <CardHeader>
-        <CardTitle className="text-center text-3xl">Book a Consultation</CardTitle>
+        <CardTitle className="text-center text-3xl text-primary">Book a Consultation</CardTitle>
       </CardHeader>
       <CardContent>
         {error && (
@@ -120,7 +120,7 @@ export const AppointmentScheduler = () => {
         )}
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center">1. Select a Date</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center text-primary">1. Select a Date</h3>
             <div className="flex justify-center">
               <Calendar
                 mode="single"
@@ -133,7 +133,7 @@ export const AppointmentScheduler = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center">2. Select a Time</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center text-primary">2. Select a Time</h3>
             {isLoading ? (
               <div className="text-center py-8">Loading available times...</div>
             ) : availableTimes.length > 0 ? (
@@ -157,7 +157,7 @@ export const AppointmentScheduler = () => {
 
         {selectedDate && selectedTime && (
           <div className="mt-8 pt-8 border-t">
-            <h3 className="text-xl font-semibold mb-4 text-center">3. Enter Your Details</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center text-primary">3. Enter Your Details</h3>
             <p className="text-center text-muted-foreground mb-4">
               Confirming for {selectedTime} on {format(selectedDate, "PPP")}
             </p>
@@ -204,7 +204,7 @@ export const AppointmentScheduler = () => {
                 />
                 <Button
                   type="submit"
-                  className="w-full bg-blue-600 text-white"
+                  className="w-full bg-blue-600 hover:bg-blue-600 text-white"
                   disabled={isLoading}
                 >
                   {isLoading ? 'Processing...' : 'Confirm Appointment'}

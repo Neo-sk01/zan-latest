@@ -58,7 +58,7 @@ const ServicesPage = () => {
     <div className="py-32">
       <div className="container">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
-          <h1 className="mb-6 text-4xl font-semibold text-pretty lg:text-5xl">
+          <h1 className="mb-6 text-4xl font-semibold text-pretty lg:text-5xl text-primary">
             Our Orthodontic Services
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -91,7 +91,7 @@ const ServicesPage = () => {
                     <IconComponent className="size-4" strokeWidth={1} />
                   </CardHeader>
                   <CardContent className="text-left">
-                    <h2 className="mb-1 text-lg font-semibold">{service.title}</h2>
+                    <h2 className="mb-1 text-lg font-semibold text-primary">{service.title}</h2>
                     <p className="leading-snug text-muted-foreground">
                       {service.description}
                     </p>
