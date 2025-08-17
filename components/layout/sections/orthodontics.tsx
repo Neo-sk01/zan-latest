@@ -8,7 +8,7 @@ export const OrthodonticsSection = () => {
       style={{ backgroundImage: "url('/background-SVG.svg')" }}
     >
       <div className="absolute inset-0 bg-black/60"></div>
-      <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 py-16 text-center">
+      <div className="relative z-10 container py-16 text-center">
         <div className="grid md:grid-cols-2 gap-12 p-4 md:p-6">
           <div className="text-left">
             <h3 className="text-2xl font-bold mb-4">What is Orthodontics?</h3>

@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export const AboutUsSection = () => {
   return (
-    <section id="about-us" className="bg-primary container py-24 sm:py-32">
-      <div className="grid lg:grid-cols-2 place-items-center lg:gap-12">
+    <section id="about-us" className="bg-primary py-24 sm:py-32">
+      <div className="container">
+        <div className="grid lg:grid-cols-2 place-items-center lg:gap-12">
         <div className="lg:order-2">
           <Image
             src="/ceramics.svg"
@@ -23,6 +24,7 @@ export const AboutUsSection = () => {
             Our practice is led by the highly skilled and compassionate Dr. Nombakuse. With extensive qualifications including a BSc, BChD, a Post-Graduate Diploma in Aesthetic Dentistry, and a Master&rsquo;s in Orthodontics from Wits, she brings a wealth of knowledge and expertise to our community. Dr. Nombakuse is committed to using state-of-the-art technology to ensure your treatment is as comfortable and efficient as possible.
           </p>
         </div>
+      </div>
       </div>
     </section>
   );
