@@ -66,13 +66,13 @@ export const ContactSection = () => {
               Contact
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold">Connect With Us</h2>
           </div>
-          <p className="mb-8 text-muted-foreground lg:w-5/6">
+          <p className="mb-8 text-base sm:text-lg text-muted-foreground lg:w-5/6">
             your path to perfect alignment here
           </p>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-base sm:text-lg">
             <div>
               <div className="flex gap-2 mb-1">
                 <Building2 />

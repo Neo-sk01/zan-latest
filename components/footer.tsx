@@ -3,35 +3,31 @@ import Link from 'next/link'
 
 const links = [
     {
-        title: 'Features',
-        href: '#',
-    },
-    {
-        title: 'Solution',
-        href: '#',
-    },
-    {
-        title: 'Customers',
-        href: '#',
-    },
-    {
-        title: 'Pricing',
-        href: '#',
-    },
-    {
-        title: 'Help',
-        href: '#',
+        title: 'Home',
+        href: '/',
     },
     {
         title: 'About',
-        href: '#',
+        href: '#about-us',
+    },
+    {
+        title: 'Services',
+        href: '/services',
+    },
+    {
+        title: 'Treatments',
+        href: '#orthodontics',
+    },
+    {
+        title: 'Book Appointment',
+        href: '#book-appointment',
     },
 ]
 
 export default function FooterSection() {
     return (
         <footer className="py-16 md:py-32">
-            <div className="mx-auto max-w-5xl px-6">
+            <div className="container mx-auto max-w-5xl px-6">
                 <Link
                     href="/"
                     aria-label="go home"
@@ -158,7 +154,7 @@ export default function FooterSection() {
                         </svg>
                     </Link>
                 </div>
-                <span className="text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Tailark, All rights reserved</span>
+                <span className="text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Zan Orthodontics, All rights reserved</span>
             </div>
         </footer>
     )

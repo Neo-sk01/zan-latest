@@ -131,7 +131,7 @@ export const Navbar = () => {
 
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block">
-        <NavigationMenuList>
+        <NavigationMenuList className="flex-wrap">
           {routeList.map(({ href, label }) => (
             <NavigationMenuItem key={href}>
               <NavigationMenuLink asChild>

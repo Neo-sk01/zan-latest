@@ -57,10 +57,10 @@ const ServicesPage = () => {
     <div className="py-32">
       <div className="container">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
-          <h1 className="mb-6 text-4xl font-semibold text-pretty lg:text-5xl text-primary">
+          <h1 className="mb-6 text-4xl sm:text-5xl font-semibold text-pretty lg:text-6xl text-primary">
             Our Orthodontic Services
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             We offer a comprehensive range of orthodontic solutions to create healthy, beautiful smiles for patients of all ages.
           </p>
 

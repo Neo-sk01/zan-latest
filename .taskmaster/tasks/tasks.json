@@ -1,0 +1,322 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Project Setup and Configuration",
+        "description": "Initialize Next.js 14+ project with App Router, configure Tailwind CSS, and set up Shadcn UI components",
+        "details": "1. Create a new Next.js project using `npx create-next-app@latest` with TypeScript\n2. Configure Tailwind CSS following the official documentation\n3. Set up Shadcn UI by following their installation guide\n4. Configure primary color (#1A384E) and other design tokens in the Tailwind config\n5. Set up project structure with appropriate folders (components, lib, app, etc.)\n6. Configure dark/light mode support using Shadcn's theme provider\n7. Set up smooth scroll behavior in the global CSS\n8. Initialize Git repository and create initial commit",
+        "testStrategy": "Verify project structure and configuration by running the development server and confirming that Tailwind CSS and Shadcn UI components are working correctly. Test dark/light mode toggle functionality.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Navigation and Header Implementation",
+        "description": "Create a responsive sticky navigation bar with logo, main menu items, and prominent CTA button",
+        "details": "1. Create a `Header` component with sticky positioning\n2. Implement the navigation bar with logo integration (resizedDesign.svg)\n3. Add main menu items: Home, About, Services, Treatments, Book Appointment\n4. Create a prominent 'Book Appointment' CTA button\n5. Implement responsive mobile menu using Shadcn UI components\n6. Add smooth scrolling to section links\n7. Ensure the header is responsive across all device sizes\n8. Implement sticky behavior on scroll",
+        "testStrategy": "Test navigation on different screen sizes to ensure responsiveness. Verify that the mobile menu works correctly. Check that the sticky behavior functions as expected during scrolling. Ensure smooth scrolling works when clicking navigation links.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Hero Section Development",
+        "description": "Create a compelling hero section with headline, professional image, value proposition, and CTA",
+        "details": "1. Create a `HeroSection` component\n2. Implement a compelling headline about orthodontic services\n3. Add a professional hero image using Next.js Image component for optimization\n4. Create a clear value proposition statement\n5. Add a call-to-action button for booking consultations\n6. Ensure responsive design for all screen sizes\n7. Optimize image loading with priority attribute for LCP improvement",
+        "testStrategy": "Verify the hero section renders correctly on different screen sizes. Test the CTA button functionality. Check image optimization using Lighthouse. Ensure the section meets design specifications and loads quickly.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "About Section Implementation",
+        "description": "Develop the About section featuring Dr. Nombakuse's profile, qualifications, and practice philosophy",
+        "details": "1. Create an `AboutSection` component\n2. Implement the section with dark background (#1A384E) and white text\n3. Add Dr. Nombakuse's professional profile information\n4. List qualifications: BSc, BChD, Post-Graduate Diploma in Aesthetic Dentistry, Master's in Orthodontics from Wits\n5. Include content about state-of-the-art technology\n6. Add information about professional approach and patient care philosophy\n7. Incorporate a professional photo of Dr. Nombakuse\n8. Ensure responsive layout for all device sizes",
+        "testStrategy": "Verify content accuracy and completeness. Test responsive behavior on different screen sizes. Check contrast ratio for accessibility compliance. Ensure image loading is optimized.",
+        "priority": "medium",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Services Page Development",
+        "description": "Create a comprehensive Services page with cards for each service offering and detailed descriptions",
+        "details": "1. Create a `ServicesPage` component and corresponding route\n2. Implement service cards with images and descriptions for:\n   - Initial Consultation (digital X-rays and 3D imaging)\n   - Traditional Braces (children and adolescents)\n   - Ceramic Braces (adults and teens)\n   - Clear Aligners/Invisalign (professionals)\n   - Retention Programs (post-treatment care)\n   - Orthodontic Monitoring (remote consultations)\n3. Design responsive grid layout for service cards\n4. Optimize images using Next.js Image component\n5. Add hover effects and interactive elements to cards\n6. Ensure consistent spacing and typography",
+        "testStrategy": "Test responsive layout on various screen sizes. Verify all service information is accurate and complete. Check image optimization. Test interactive elements and hover effects. Ensure accessibility compliance.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Orthodontics Information Section",
+        "description": "Develop an educational section about orthodontics with background image and informative content",
+        "details": "1. Create an `OrthodonticsInfoSection` component\n2. Implement a background image with overlay for visual appeal\n3. Add educational content sections about:\n   - Difference between orthodontists and dentists\n   - What orthodontists do\n   - Common dental issues treated\n   - Benefits of orthodontic treatment\n4. Structure content in an engaging, readable format\n5. Ensure responsive design for all screen sizes\n6. Optimize background image loading",
+        "testStrategy": "Verify content accuracy and readability. Test responsive behavior on different devices. Check image loading performance. Ensure text contrast meets accessibility standards. Test overlay appearance on various screen sizes.",
+        "priority": "medium",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Supabase Integration for Appointment Storage",
+        "description": "Set up Supabase database and create necessary tables for storing appointment data",
+        "details": "1. Create a Supabase project\n2. Set up database tables for appointments with fields for:\n   - Patient information (name, email, phone)\n   - Appointment date and time\n   - Appointment status\n   - Notes/reason for visit\n3. Configure row-level security policies\n4. Create API endpoints for appointment CRUD operations\n5. Set up environment variables for Supabase URL and API key\n6. Implement utility functions for database operations\n7. Test database connections and queries",
+        "testStrategy": "Test database connection and CRUD operations. Verify security policies are working correctly. Test API endpoints with sample data. Ensure environment variables are properly configured. Validate data integrity constraints.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Appointment Booking System Implementation",
+        "description": "Create an interactive appointment booking system with calendar, time slots, and form integration",
+        "details": "1. Create an `AppointmentBooking` component\n2. Implement a custom calendar component for date selection\n3. Develop available time slots display based on selected date\n4. Create patient information form with React Hook Form and Zod validation\n5. Implement form fields: name, email, phone, and reason for visit\n6. Add form validation with error messages\n7. Connect form submission to Supabase database\n8. Add loading states for async operations\n9. Implement success/error feedback messages\n10. Position the booking system after the contact section on homepage",
+        "testStrategy": "Test the entire booking flow from date selection to form submission. Verify form validation works correctly. Test error handling and feedback messages. Check database integration by confirming appointments are stored correctly. Test responsive behavior on different devices.",
+        "priority": "high",
+        "dependencies": [
+          1,
+          7
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Email Notification System with Resend",
+        "description": "Implement email notifications for appointment confirmations to both clinic and patients",
+        "details": "1. Set up Resend email service account\n2. Configure environment variables for Resend API key\n3. Create email templates for appointment confirmations\n4. Implement email sending functionality using Resend API\n5. Set up email notifications to be triggered on successful appointment booking\n6. Send confirmation emails to both the clinic (info@zanorthodontist.co.za) and the patient\n7. Include appointment details in the email (date, time, patient info)\n8. Add error handling for failed email deliveries",
+        "testStrategy": "Test email delivery to both clinic and patient addresses. Verify email content and formatting. Test error handling for failed deliveries. Check that all appointment details are correctly included in the emails.",
+        "priority": "medium",
+        "dependencies": [
+          7,
+          8
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Contact Section Development",
+        "description": "Create a comprehensive contact section with practice information, contact form, and location details",
+        "details": "1. Create a `ContactSection` component\n2. Add practice location: Wits Oral Health Centre, Johannesburg\n3. Include phone number: +27 11 354 1200\n4. Add email: info@zanorthodontist.co.za\n5. List operating hours: Monday-Friday, 8AM-4PM\n6. Implement contact form with subject selection using React Hook Form and Zod\n7. Add form validation and error handling\n8. Connect form submission to email service\n9. Include the tagline \"Your path to perfect alignment here\"\n10. Ensure responsive design for all screen sizes",
+        "testStrategy": "Test contact form submission and validation. Verify that form data is correctly processed. Check responsive layout on different devices. Ensure all contact information is accurate and properly displayed.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          9
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 11,
+        "title": "Professional Associations Section",
+        "description": "Develop a section showcasing professional associations and certifications for credibility",
+        "details": "1. Create a `ProfessionalAssociations` component\n2. Display logos and information for:\n   - HPCSA (Health Professions Council of South Africa)\n   - SADA (South African Dental Association)\n   - Ortho SA (Orthodontic Society of South Africa)\n3. Implement a clean, professional layout for the logos\n4. Add brief descriptions of each association\n5. Ensure responsive design for all screen sizes\n6. Optimize logo images for performance",
+        "testStrategy": "Verify all association information is accurate. Test responsive layout on different screen sizes. Check image optimization. Ensure logos are properly aligned and sized.",
+        "priority": "low",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 12,
+        "title": "Footer Implementation",
+        "description": "Create a comprehensive footer with practice information, quick links, social media, and copyright",
+        "details": "1. Create a `Footer` component\n2. Include practice information section\n3. Add quick links to main pages\n4. Implement social media links\n5. Add copyright information\n6. Ensure responsive design for all screen sizes\n7. Maintain consistent styling with the rest of the site\n8. Add navigation links that match the header",
+        "testStrategy": "Test all links in the footer to ensure they work correctly. Verify responsive behavior on different screen sizes. Check that all required information is included. Ensure consistent styling with the rest of the site.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 13,
+        "title": "SEO and Metadata Implementation",
+        "description": "Implement comprehensive SEO optimization with meta tags and Open Graph support",
+        "details": "1. Create a metadata configuration for the site\n2. Implement page-specific meta titles and descriptions\n3. Add Open Graph tags for social media sharing\n4. Set up canonical URLs\n5. Implement structured data for local business\n6. Add alt text to all images\n7. Create a sitemap.xml file\n8. Implement robots.txt\n9. Set up metadata for all main pages\n10. Ensure all metadata is dynamically generated where appropriate",
+        "testStrategy": "Test metadata using tools like Google's Structured Data Testing Tool. Verify Open Graph tags using Facebook's Sharing Debugger. Check that all pages have appropriate meta titles and descriptions. Validate structured data format.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 14,
+        "title": "Performance Optimization",
+        "description": "Implement performance optimizations to meet load time and accessibility requirements",
+        "details": "1. Optimize all images using Next.js Image component with appropriate sizing\n2. Implement lazy loading for below-the-fold content\n3. Set up font optimization with next/font\n4. Minimize JavaScript bundle size with code splitting\n5. Implement caching strategies\n6. Add loading states for async operations\n7. Optimize CSS with Tailwind's purge option\n8. Set up Core Web Vitals monitoring\n9. Implement accessibility improvements to meet WCAG 2.1 AA standards\n10. Test and optimize for page load time under 3 seconds",
+        "testStrategy": "Use Lighthouse to measure performance metrics. Test page load times on various devices and connection speeds. Verify accessibility compliance using automated tools and manual testing. Check Core Web Vitals scores.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          11,
+          12
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 15,
+        "title": "Deployment and Final Testing",
+        "description": "Deploy the website to production and perform comprehensive testing",
+        "details": "1. Set up production environment variables\n2. Configure build process for production\n3. Deploy to hosting platform (Vercel recommended for Next.js)\n4. Set up custom domain and SSL certificate\n5. Perform cross-browser testing (Chrome, Firefox, Safari, Edge)\n6. Test on multiple devices (desktop, tablet, mobile)\n7. Verify all functionality works in production\n8. Test appointment booking flow end-to-end\n9. Check email delivery in production\n10. Verify analytics integration\n11. Perform final accessibility audit\n12. Create documentation for maintenance",
+        "testStrategy": "Conduct end-to-end testing of all features in the production environment. Test on multiple browsers and devices. Verify all integrations (Supabase, Resend) work correctly in production. Check performance metrics in production environment. Validate all links and forms.",
+        "priority": "high",
+        "dependencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-17T09:25:23.219Z",
+      "updated": "2025-08-17T09:28:39.942Z",
+      "description": "Tasks for master context"
+    }
+  },
+  "feature-mobile-responsive": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Implement Mobile-Responsive Design for Website",
+        "description": "Develop and implement a fully mobile-responsive design for the entire website using Tailwind CSS to ensure optimal viewing and interaction experience across all device sizes.",
+        "details": "This task involves a comprehensive approach to making the website fully responsive:\n\n1. Audit all components and layouts for fixed dimensions:\n   - Identify all elements with fixed width/height values\n   - Document components that cause overflow on smaller screens\n   - List all instances of text overlapping issues\n\n2. Apply Tailwind CSS responsive classes:\n   - Replace fixed dimensions with responsive utilities (w-full, max-w-screen-*)\n   - Implement fluid typography using text-* classes with responsive modifiers\n   - Use Tailwind's responsive prefixes (sm:, md:, lg:, xl:) for breakpoint-specific styling\n   - Apply flex and grid layouts with responsive modifiers for adaptive content organization\n\n3. Fix layout and text issues:\n   - Adjust container padding and margins for smaller screens\n   - Implement proper text wrapping and truncation where needed\n   - Create mobile-specific navigation components (hamburger menu)\n   - Ensure proper spacing between elements at all breakpoints\n\n4. Optimize images and media:\n   - Implement responsive image techniques using Tailwind's object-fit utilities\n   - Consider using the picture element for art direction\n   - Ensure proper loading and display of media across devices\n\n5. Test and refine:\n   - Iteratively test on multiple device sizes and orientations\n   - Address edge cases like extremely small screens or landscape orientations\n   - Ensure touch targets are appropriately sized (min 44x44px) for mobile users\n\nImplementation should follow a mobile-first approach, starting with the smallest viewport and progressively enhancing for larger screens.",
+        "testStrategy": "1. Automated Testing:\n   - Write and run responsive design tests using tools like Cypress or Playwright\n   - Verify layout integrity at standard breakpoints (320px, 768px, 1024px, 1440px)\n   - Automate screenshot comparisons across different viewport sizes\n\n2. Manual Testing:\n   - Test on actual physical devices (not just browser emulation):\n     * iOS devices: iPhone SE, iPhone 12/13/14, iPad\n     * Android devices: Small phone (Galaxy S), Large phone (Pixel), Tablet\n   - Test in both portrait and landscape orientations\n   - Verify touch interactions work properly on mobile devices\n   - Check for any text overlapping, overflow issues, or horizontal scrolling\n\n3. Cross-Browser Testing:\n   - Verify responsive behavior in Chrome, Safari, Firefox, and Edge\n   - Pay special attention to iOS Safari which may have unique rendering behaviors\n\n4. Accessibility Testing:\n   - Ensure the responsive design maintains accessibility at all viewport sizes\n   - Verify that text remains readable (minimum 16px font size on mobile)\n   - Check that interactive elements maintain proper focus states\n\n5. Performance Testing:\n   - Measure and compare page load times across different devices\n   - Verify that responsive images load appropriately for the device\n   - Run Lighthouse mobile performance audits\n\n6. User Testing:\n   - Have team members navigate the site on their personal mobile devices\n   - Document any usability issues encountered during real-world usage",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Audit and Fix Mobile Responsiveness Issues",
+        "description": "Identify and resolve all existing mobile responsiveness issues including overlapping text, incorrect scaling, and poor layouts on smaller screens to ensure optimal user experience across all devices.",
+        "details": "This task focuses on fixing existing mobile responsiveness issues across the website:\n\n1. Conduct a comprehensive audit:\n   - Use Chrome DevTools Device Mode to test all pages at standard breakpoints (320px, 375px, 428px, 768px, 1024px)\n   - Document all instances of:\n     * Overlapping text or UI elements\n     * Horizontal scrolling issues\n     * Incorrectly scaled images or components\n     * Touch targets that are too small (< 44px)\n     * Unreadable text due to scaling issues\n\n2. Prioritize issues by severity:\n   - Critical: Content completely inaccessible or unusable\n   - High: Significant usability problems but content accessible\n   - Medium: Cosmetic issues affecting user experience\n   - Low: Minor visual inconsistencies\n\n3. Implement fixes using Tailwind CSS:\n   - Replace fixed width/height values with responsive utilities\n   - Use flex and grid layouts with appropriate responsive modifiers\n   - Implement proper text wrapping and overflow handling\n   - Add appropriate spacing at different breakpoints using responsive padding/margin\n   - Ensure proper stacking of elements on smaller screens with flex-col or grid-cols-* classes\n\n4. Address specific common issues:\n   - For overlapping text: Implement proper text-wrapping, truncation, or responsive font sizing\n   - For incorrect scaling: Use relative units and aspect-ratio utilities\n   - For poor layouts: Refactor using mobile-first approach with appropriate breakpoint modifiers\n\n5. Create a responsive issues tracking document:\n   - Document each issue with screenshots before/after\n   - Track resolution status and approach used\n   - Note any components requiring significant refactoring",
+        "testStrategy": "1. Systematic Device Testing:\n   - Test all fixed issues on physical devices including:\n     * Small phones (iPhone SE, Galaxy S10e)\n     * Standard phones (iPhone 13, Pixel 6)\n     * Large phones (iPhone 13 Pro Max, Galaxy S22 Ultra)\n     * Tablets (iPad Mini, iPad Pro, Galaxy Tab)\n   - Verify in multiple browsers (Chrome, Safari, Firefox)\n\n2. Responsive Testing Tools:\n   - Use Responsively App to simultaneously view multiple device sizes\n   - Employ Chrome DevTools Device Mode for rapid testing\n   - Utilize BrowserStack for testing on devices not physically available\n\n3. Validation Checklist:\n   - Confirm no horizontal scrolling appears on any screen size\n   - Verify all text is readable without zooming\n   - Ensure all interactive elements have appropriate touch target sizes\n   - Check that images scale properly without distortion\n   - Validate that spacing remains consistent and appropriate across breakpoints\n\n4. User Flow Testing:\n   - Complete key user journeys on mobile devices\n   - Verify that functionality works correctly at all breakpoints\n   - Test orientation changes (portrait/landscape)\n\n5. Performance Validation:\n   - Run Lighthouse mobile performance tests before and after fixes\n   - Ensure fixes don't negatively impact page load times\n   - Verify that layout shifts are minimized (Cumulative Layout Shift score)",
+        "status": "pending",
+        "dependencies": [
+          1
+        ],
+        "priority": "high",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Comprehensive Mobile Responsiveness Audit",
+            "description": "Systematically review all website pages using Chrome DevTools Device Mode at standard breakpoints (320px, 375px, 428px, 768px, 1024px) to identify mobile responsiveness issues such as overlapping text, horizontal scrolling, incorrectly scaled images, small touch targets, and unreadable text.",
+            "dependencies": [],
+            "details": "Document each issue with screenshots and detailed notes, ensuring all types of mobile display problems are captured for every page and component.",
+            "status": "done",
+            "testStrategy": "Verify audit completeness by cross-checking all documented issues against each tested breakpoint and device simulation."
+          },
+          {
+            "id": 2,
+            "title": "Issue Severity Assessment and Prioritization",
+            "description": "Categorize all identified mobile responsiveness issues by severity: Critical (content inaccessible), High (major usability problems), Medium (cosmetic issues), and Low (minor inconsistencies).",
+            "dependencies": [
+              "2.1"
+            ],
+            "details": "Assign severity levels to each documented issue to guide the order of resolution and resource allocation.",
+            "status": "pending",
+            "testStrategy": "Review prioritization for consistency and accuracy by sampling issues and confirming severity assignments with project stakeholders."
+          },
+          {
+            "id": 3,
+            "title": "Implement Responsive Fixes Using Tailwind CSS",
+            "description": "Resolve prioritized issues by applying Tailwind CSS responsive utilities, including replacing fixed dimensions, using flex/grid layouts, adjusting text wrapping, and ensuring proper spacing and stacking at all breakpoints.",
+            "dependencies": [
+              "2.2"
+            ],
+            "details": "Apply mobile-first design principles and Tailwind modifiers to ensure layouts adapt smoothly across all device sizes.",
+            "status": "pending",
+            "testStrategy": "Test each fix in Chrome DevTools and on physical devices to confirm issues are resolved and no regressions are introduced."
+          },
+          {
+            "id": 4,
+            "title": "Address Common and Complex Responsiveness Issues",
+            "description": "For recurring problems such as overlapping text, incorrect scaling, and poor layouts, implement targeted solutions like responsive font sizing, aspect-ratio utilities, and layout refactoring using mobile-first approaches.",
+            "dependencies": [
+              "2.3"
+            ],
+            "details": "Refactor components as needed to eliminate persistent or complex issues, ensuring solutions are robust and maintainable.",
+            "status": "pending",
+            "testStrategy": "Conduct focused regression testing on affected components and verify improvements across all standard breakpoints."
+          },
+          {
+            "id": 5,
+            "title": "Create and Maintain Responsive Issues Tracking Document",
+            "description": "Develop a tracking document that logs each issue with before/after screenshots, resolution status, applied fixes, and notes on components requiring significant refactoring.",
+            "dependencies": [
+              "2.4"
+            ],
+            "details": "Ensure the document is updated in real time as issues are resolved, providing a clear audit trail and reference for future maintenance.",
+            "status": "pending",
+            "testStrategy": "Periodically review the tracking document for completeness and accuracy, ensuring all resolved issues are properly documented and verified."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-17T09:38:55.231Z",
+      "updated": "2025-08-17T09:52:42.780Z",
+      "description": "Tag created on 8/17/2025"
+    }
+  }
+}

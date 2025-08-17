@@ -11,24 +11,24 @@ export const OrthodonticsSection = () => {
       <div className="relative z-10 container py-16 text-center">
         <div className="grid md:grid-cols-2 gap-12 p-4 md:p-6">
           <div className="text-left">
-            <h3 className="text-2xl font-bold mb-4">What is Orthodontics?</h3>
-            <p className="mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">What is Orthodontics?</h3>
+            <p className="mb-8 text-base sm:text-lg">
               Orthodontics is the treatment of irregularities in the teeth and
               jaws. Orthodontic care involves the use of devices such as braces
               to straighten teeth and correct problems with bite.
             </p>
 
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">
               What is the difference between Orthodontists and Dentists?
             </h3>
-            <p className="mb-8">
+            <p className="mb-8 text-base sm:text-lg">
               Orthodontists specialise in aligning teeth and jaws, while Dentists
               help patients achieve a cleaner, healthier smile through cleanings,
               x-ray and even surgery.
             </p>
 
-            <h3 className="text-2xl font-bold mb-4">What is an Orthodontist?</h3>
-            <p>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">What is an Orthodontist?</h3>
+            <p className="text-base sm:text-lg">
               An orthodontist is a dentist trained to diagnose, prevent, and
               treat teeth and jaw irregularities. They correct existing conditions
               and are trained to identify problems that may develop in the
@@ -37,19 +37,19 @@ export const OrthodonticsSection = () => {
             </p>
           </div>
           <div className="text-left">
-            <h2 className="text-4xl font-bold mb-6">What Does an Orthodontist Do?</h2>
-            <p className="mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">What Does an Orthodontist Do?</h2>
+            <p className="mb-4 text-base sm:text-lg">
               Orthodontists use fixed and removable dental devices, like braces,
               retainers, and bands, to change the position of teeth in the mouth. They
               treat dental abnormalities, including:
             </p>
-            <ul className="list-disc list-inside mb-4">
+            <ul className="list-disc list-inside mb-4 text-base sm:text-lg">
               <li>Crooked teeth</li>
               <li>Bite problems, like an over-bite or an under-bite</li>
               <li>Crowded teeth, or teeth that are too far apart</li>
               <li>Jaw misalignment</li>
             </ul>
-            <p>
+            <p className="text-base sm:text-lg">
               The goal of orthodontic care is to improve a patient&rsquo;s bite. Teeth that
               are straight and evenly spaced will align with opposing teeth in the jaw.
               A healthy bite ensures you can eat, chew, and speak properly. In the
