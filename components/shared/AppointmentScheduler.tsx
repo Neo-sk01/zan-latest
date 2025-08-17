@@ -108,7 +108,7 @@ export const AppointmentScheduler = () => {
   }
 
   return (
-    <Card className="w-full max-w-6xl mx-auto">
+    <Card className="w-full max-w-6xl mx-auto bg-white">
       <CardHeader>
         <CardTitle className="text-center text-3xl text-primary">Book a Consultation</CardTitle>
       </CardHeader>

@@ -50,6 +50,10 @@ const routeList: RouteProps[] = [
     href: "#orthodontics",
     label: "Treatments",
   },
+  {
+    href: "#book-appointment",
+    label: "Book Appointment",
+  },
 ];
 
 
@@ -118,7 +122,7 @@ export const Navbar = () => {
               <Separator className="mb-2" />
 
               <Button asChild size="lg" className="w-full">
-                <Link href="#contact">Book Appointment</Link>
+                <Link href="#book-appointment">Book Appointment</Link>
               </Button>
             </SheetFooter>
           </SheetContent>
@@ -142,7 +146,7 @@ export const Navbar = () => {
 
       <div className="hidden lg:flex">
         <Button asChild size="lg">
-          <Link href="#contact">Book Appointment</Link>
+          <Link href="#book-appointment">Book Appointment</Link>
         </Button>
       </div>
     </div>

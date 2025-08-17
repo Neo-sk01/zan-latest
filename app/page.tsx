@@ -3,6 +3,7 @@ import { ContactSection } from "@/components/layout/sections/contact";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { OrthodonticsSection } from "@/components/layout/sections/orthodontics";
+import { AppointmentScheduler } from "@/components/shared/AppointmentScheduler";
 
 
 export const metadata = {
@@ -41,6 +42,11 @@ export default function Home() {
       <AboutUsSection />
       <OrthodonticsSection />
       <ContactSection />
+      <section id="book-appointment" className="bg-primary">
+        <div className="container py-24 sm:py-32">
+          <AppointmentScheduler />
+        </div>
+      </section>
     </>
   );
 }

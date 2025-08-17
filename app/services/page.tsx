@@ -18,7 +18,6 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { AppointmentScheduler } from "@/components/shared/AppointmentScheduler";
 
 const orthodonticServices = [
   {
@@ -112,10 +111,6 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
-
-      <section id="book-appointment" className="mt-20 container">
-        <AppointmentScheduler />
-      </section>
     </div>
   );
 };
