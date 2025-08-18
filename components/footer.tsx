@@ -1,5 +1,5 @@
-import { Logo } from '@/components/logo'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const links = [
     {
@@ -32,7 +32,14 @@ export default function FooterSection() {
                     href="/"
                     aria-label="go home"
                     className="mx-auto block size-fit">
-                    <Logo />
+                    <Image
+                        src="/resizedDesign.svg"
+                        alt="Zan Orthodontics Logo"
+                        width={160}
+                        height={200}
+                        className="h-16 w-auto object-contain"
+                        priority
+                    />
                 </Link>
 
                 <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
